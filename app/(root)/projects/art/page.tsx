@@ -3,12 +3,16 @@ import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 // import FloatingNavDemo from "@/components/FloatingNavbar";
 import FloatingDockDemo from "@/components/FloatingDock";
+import Footer from "@/components/Footer";
 
 export default function LayoutGridDemo() {
   return (
-    <div className="h-screen py-20 w-full">
-      <FloatingDockDemo />
+    <div className="h-screen  w-full px-96">
+      <FloatingDockDemo/>
+      {/* Page title */}
+    <h1 className="text-3xl md:text-4xl font-bold text-center animate-fade-up animate-duration-[1000ms]">My Photography Work</h1>
       <LayoutGrid cards={cards} />
+      <Footer />
     </div>
   );
 }

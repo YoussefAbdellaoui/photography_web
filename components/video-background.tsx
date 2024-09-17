@@ -1,9 +1,8 @@
-"use client"
+"'use client'"
 
-import FloatingDockDemo from "@/components/FloatingDock"
 import { Button } from "@/components/ui/button"
 
-export default function Component() {
+export function VideoBackground() {
   return (
     <div className="relative min-h-screen flex flex-col">
       {/* Video Background */}
@@ -19,7 +18,6 @@ export default function Component() {
 
       {/* Content Overlay */}
       <div className="relative z-10 flex-grow flex items-center justify-center px-4 text-center">
-      <FloatingDockDemo/>
         <div className="bg-black bg-opacity-50 p-8 rounded-lg">
           <h1 className="text-4xl font-bold text-white mb-4">Welcome to Our Site</h1>
           <p className="text-xl text-white mb-6">Discover amazing content with our video background.</p>

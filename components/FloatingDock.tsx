@@ -1,10 +1,17 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
+  Icon360,
+  IconAbc,
+  IconArtboard,
+  IconArticle,
   IconBrandGithub,
   IconBrandX,
+  IconCamera,
+  IconDeviceProjector,
   IconExchange,
   IconHome,
+  IconMeat,
   IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
@@ -17,41 +24,36 @@ export default function FloatingDockDemo() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
       title: "About",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconArticle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/about",
     },
     {
       title: "Projects",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconCamera className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/projects",
     },
     {
       title: "Art Work",
       icon: (
-        <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+          <IconArtboard className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/projects/art",
     },
     {
       title: "Contact",
       icon: (
         <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/contact",
     },
 
     // {
@@ -70,7 +72,7 @@ export default function FloatingDockDemo() {
     // },
   ];
   return (
-    <div className="flex items-center justify-center w-full">
+    <div className="flex items-center justify-center w-full pb-10 pt-10">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}

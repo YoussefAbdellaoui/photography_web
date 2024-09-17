@@ -1,6 +1,7 @@
 "use client"
 import Footer from "@/components/Footer"
 import { useState } from "react"
+import FloatingDockDemo from "@/components/FloatingDock"
 
 export default function PhotographyPortfolio() {
 
@@ -38,10 +39,12 @@ export default function PhotographyPortfolio() {
   return (
     <div className="flex flex-col items-center justify-center p-4 min-h-screen">
     {/* Space for the navbar */}
-    <div className="h-20"></div>
+    <div className="">
+      <FloatingDockDemo />
+    </div>
 
     {/* Page title */}
-    <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center animate-fade-up animate-duration-[1000ms]">My Photography Work</h1>
+    <h1 className="text-3xl md:text-4xl font-bold mb-14 text-center animate-fade-up animate-duration-[1000ms]">My Photography Work</h1>
 
     {/* Responsive Image Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl animate-fade-up animate-duration-[1000ms]">
