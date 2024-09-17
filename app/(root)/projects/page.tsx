@@ -1,104 +1,100 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
-import { LayoutGrid } from "@/components/ui/layout-grid";
-// import FloatingNavDemo from "@/components/FloatingNavbar";
-import FloatingDockDemo from "@/components/FloatingDock";
+"use client"
+import Footer from "@/components/Footer"
+import { useState } from "react"
 
-export default function LayoutGridDemo() {
-  return (
-    <div className="h-screen py-20 w-full">
-      <FloatingDockDemo />
-      <LayoutGrid cards={cards} />
-    </div>
-  );
-}
+export default function PhotographyPortfolio() {
 
-const SkeletonOne = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        House in the woods
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
-      </p>
-    </div>
-  );
-};
+  // Add zoom function to pictures
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-const SkeletonTwo = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        House above the clouds
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
-      </p>
-    </div>
-  );
-};
-const SkeletonThree = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Greens all over
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
-      </p>
-    </div>
-  );
-};
-const SkeletonFour = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
-      </p>
-    </div>
-  );
-};
+  const images = [
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Coastal city view" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Modern cityscape" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Camel in desert" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Boats near beach" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Cat on roof" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Aerial view of event" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Countryside house" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "City street view" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Golden Gate Bridge" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Beach parking lot" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Modern building complex" },
+    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "San Francisco street" },
+    // { src: "/placeholder.svg?height=300&width=400", alt: "San Francisco street" },
+  ];
 
-const cards = [
-  {
-    id: 1,
-    content: <SkeletonOne />,
-    className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1694365959727-6dcb3c3a35b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjd8fHxlbnwwfHx8fHw%3D",
-  },
-  {
-    id: 2,
-    content: <SkeletonTwo />,
-    className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1694365959727-6dcb3c3a35b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjd8fHxlbnwwfHx8fHw%3D",
-  },
-  {
-    id: 3,
-    content: <SkeletonThree />,
-    className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1694365959727-6dcb3c3a35b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjd8fHxlbnwwfHx8fHw%3D",
-  },
-  {
-    id: 4,
-    content: <SkeletonFour />,
-    className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1694365959727-6dcb3c3a35b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjd8fHxlbnwwfHx8fHw%3D",
-  },
-];
+  // Function to handle closing the enlarged image
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
+   const handleOverlayClick = (e) => {
+    // Check if the click is outside the image (on the overlay)
+    if (e.target.id === 'overlay') {
+      closeImage();
+    }
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center p-4 min-h-screen">
+    {/* Space for the navbar */}
+    <div className="h-20"></div>
+
+    {/* Page title */}
+    <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center animate-fade-up animate-duration-[1000ms]">My Photography Work</h1>
+
+    {/* Responsive Image Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl animate-fade-up animate-duration-[1000ms]">
+      {images.map((images, index) => (
+        <div
+          key={index}
+          className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer hover-effect"
+          onClick={() => setSelectedImage(images.src)} // Set the clicked image
+        >
+          {/* Image */}
+          <img
+            src={images.src}
+            alt={images.alt}
+            className="w-full h-64 object-cover hover-effect"
+          />
+          {/* Overlay with Alt Text */}
+          <div className="absolute inset-0 flex items-center justify-center bg-slate-400 bg-opacity-50 
+          opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <p className="text-white text-center text-lg px-2">{images.alt}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Enlarged Image Modal */}
+    {selectedImage && (
+    <div
+        id="overlay"
+        className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+        onClick={handleOverlayClick} // Click on overlay to close
+      >
+      <div className="relative flex flex-row flex-wrap justify-center">
+          
+          {/* Close Button */}
+          <button
+            className="absolute top-0 right-0 m-4 text-blue-500 text-4xl"
+            onClick={closeImage}
+          >
+            &times;
+          </button>
+
+          {/* Enlarged Image */}
+          <img
+            src={selectedImage}
+            alt="Enlarged"
+            className="max-w-screen-lg max-h-screen rounded-2xl shadow-lg"
+          />
+      </div>
+    </div>
+    )}
+
+    {/* Space for the footer */}
+      <Footer />
+  </div>
+  )
+  }
