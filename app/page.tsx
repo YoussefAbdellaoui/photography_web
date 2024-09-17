@@ -16,10 +16,9 @@ export default function Component() {
         <source src="https://ykbqzjxvqvgxnxhqnlhz.supabase.co/storage/v1/object/public/videos/pexels-mikhail-nilov-6981411.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
+      <FloatingDockDemo/>
       {/* Content Overlay */}
       <div className="relative z-10 flex-grow flex items-center justify-center px-4 text-center">
-      <FloatingDockDemo/>
         <div className="bg-black bg-opacity-50 p-8 rounded-lg">
           <h1 className="text-4xl font-bold text-white mb-4">Welcome to Our Site</h1>
           <p className="text-xl text-white mb-6">Discover amazing content with our video background.</p>
