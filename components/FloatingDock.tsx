@@ -1,21 +1,12 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  Icon360,
-  IconAbc,
   IconArtboard,
   IconArticle,
-  IconBrandGithub,
-  IconBrandX,
   IconCamera,
-  IconDeviceProjector,
-  IconExchange,
   IconHome,
-  IconMeat,
-  IconNewSection,
-  IconTerminal2,
+  IconPhone,
 } from "@tabler/icons-react";
-import Image from "next/image";
 
 export default function FloatingDockDemo() {
   const links = [
@@ -51,7 +42,7 @@ export default function FloatingDockDemo() {
     {
       title: "Contact",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/contact",
     },

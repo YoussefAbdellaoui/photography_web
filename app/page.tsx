@@ -2,6 +2,7 @@
 
 import FloatingDockDemo from "@/components/FloatingDock"
 import { Button } from "@/components/ui/button"
+// import Cover from "@/components/ui/cover"
 
 export default function Component() {
   return (
@@ -22,7 +23,7 @@ export default function Component() {
       {/* Content Overlay */}
       <div className="relative z-10 flex-grow flex items-center justify-center px-4 text-center">
         <div className="bg-black bg-opacity-50 p-8 rounded-lg">
-          <h1 className="text-4xl font-bold text-white mb-4">Welcome to Our Site</h1>
+          <h1 className="text-4xl font-bold text-white mb-4">at Welcome to Our Site</h1>
           <p className="text-xl text-white mb-6">Discover amazing content with our video background.</p>
           <Button variant="outline" className="text-white border-white hover:bg-white hover:text-black transition-colors">
             Learn More
