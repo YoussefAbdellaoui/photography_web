@@ -39,7 +39,7 @@ export default function PhotographyPortfolio() {
   return (
     <div className="flex flex-col items-center justify-center p-4 min-h-screen">
     {/* Space for the navbar */}
-    <div className="pt-10">
+    <div className="">
       <FloatingDockDemo />
     </div>
 
