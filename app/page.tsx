@@ -13,9 +13,11 @@ export default function Component() {
         muted
         className="absolute z-0 w-full h-full object-cover"
       >
-        <source src="https://ykbqzjxvqvgxnxhqnlhz.supabase.co/storage/v1/object/public/videos/pexels-mikhail-nilov-6981411.mp4" type="video/mp4" />
+        <source src="" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+        
+        {/* Floating Dock */} 
       <FloatingDockDemo/>
       {/* Content Overlay */}
       <div className="relative z-10 flex-grow flex items-center justify-center px-4 text-center">
