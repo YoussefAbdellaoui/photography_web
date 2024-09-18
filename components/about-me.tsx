@@ -2,14 +2,12 @@
 
 import Image from "next/image"
 import { Camera, Code, Plane, Share } from "lucide-react"
-import FloatingDockDemo from "@/components/FloatingDock"
 
-export default function AboutMeComponent() {
+export function AboutMeComponent() {
   return (
-    <div className="container mx-auto px-4 pb-6 max-w-4xl">
-      <FloatingDockDemo/>
+    <div className="container mx-auto px-4 py-16 max-w-4xl">
       <Image 
-        src="https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/City%20Waterfront%20Spain.jpg?t=2024-09-18T09%3A47%3A56.093Z" 
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202024-09-18%20at%2011.38.14-LUfi1pEhikhY2MA38TZZRgmGZc89B0.png" 
         alt="Aerial view of a city or campus" 
         width={1200} 
         height={600} 
@@ -44,7 +42,7 @@ export default function AboutMeComponent() {
         <div className="flex items-center">
           <Share className="text-blue-500 mr-2" size={24} />
           <p>
-            Beyond personal satisfaction, I love <span className="text-blue-500 font-semibold">sharing</span> my work with others, which is why I upload some of my photos to <a href="https://unsplash.com/@theworldthrumylenses" className="text-blue-500 underline">Unsplash</a>. It brings me joy knowing that people can use my images freely for their own projects.
+            Beyond personal satisfaction, I love <span className="text-blue-500 font-semibold">sharing</span> my work with others, which is why I upload some of my photos to <a href="https://unsplash.com" className="text-blue-500 underline">Unsplash</a>. It brings me joy knowing that people can use my images freely for their own projects.
           </p>
         </div>
 
@@ -56,7 +54,7 @@ export default function AboutMeComponent() {
           I'm creative, open-minded, and passionate about this visual journey I'm on, and I'm excited to share it with you :)
         </p>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center">
           <Code className="text-blue-500 mr-2" size={24} />
           <p className="italic">
             P.S. - I also do video editing, well I try to...

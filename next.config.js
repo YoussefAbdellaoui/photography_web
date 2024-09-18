@@ -5,8 +5,17 @@ module.exports = {
           protocol: 'https',
           hostname: 'assets.aceternity.com',
           port: '',
-          pathname: '/logo-dark.png',
         },
+        {
+          protocol: 'https',
+          hostname: 'mcazjrqrbacpcxpqdjca.supabase.co',
+          port: '',
+        },
+        {
+          protocol: 'https',
+          hostname: 'images.unsplash.com',
+          port: '',
+        }
       ],
     },
   }
