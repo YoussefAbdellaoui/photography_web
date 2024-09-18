@@ -23,10 +23,10 @@ export default function Component() {
       {/* Content Overlay */}
       <div className="relative z-10 flex-grow flex items-center justify-center px-4 text-center">
         <div className="bg-black bg-opacity-50 px-16 py-10 rounded-lg">
-          <h1 className="text-4xl font-bold text-white mb-4">Welcome to</h1>
-          <h3 className="text-4xl font-bold text-white mb-4"><Cover>Rif Shift Media</Cover></h3>
+          <h1 className="text-5xl font-bold text-white mb-7">Welcome to</h1>
+          <h3 className="text-4xl font-bold text-white mb-7"><Cover>Rif Shift Media</Cover></h3>
           <p className="text-xl text-white mb-6"></p>
-          <Button variant="outline" className="text-black border-white hover:bg-white hover:text-black transition-colors">
+          <Button variant="outline" className="text-black border-white hover:bg-white hover:text-black transition-colors hover-effect">
             <a href="/projects">Learn More</a>
           </Button>
         </div>

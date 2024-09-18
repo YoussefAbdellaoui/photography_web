@@ -10,17 +10,17 @@ export default function PhotographyPortfolio() {
 
   const images = [
     { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Coastal city view" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Modern cityscape" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Camel in desert" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Boats near beach" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Cat on roof" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Aerial view of event" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Countryside house" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "City street view" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Golden Gate Bridge" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Beach parking lot" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Modern building complex" },
-    { src: "https://images.unsplash.com/photo-1717169322817-e08bffe120af?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "San Francisco street" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/City%20Waterfront%20Spain.jpg?t=2024-09-18T09%3A47%3A56.093Z", alt: "Spanish coast" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/camel.jpg", alt: "Camel in desert" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/yate%20in%20dubai.jpg", alt: "Yate tour, Dubai Marina, UAE" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/cat.jpg?t=2024-09-18T12%3A11%3A11.905Z", alt: "Cat being curious" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/santamonicaOver.jpg", alt: "Aerial view of Santa Monica Pier, Los Angeles, CA" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/houseinthethrees.jpg", alt: "Countryside house" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/LAdowntown.jpg", alt: "Downtown Los Angeles" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/goldengate.jpg", alt: "Golden Gate Bridge" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/sfdowntown.jpg?t=2024-09-18T12%3A14%3A28.702Z", alt: "Downtown San Francisco" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/santamonicabeach.jpg?t=2024-09-18T12%3A25%3A00.263Z", alt: "Santa Monica beach, Los Angeles, CA" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/sf.jpg", alt: "Arial View of San Francisco" },
     // { src: "/placeholder.svg?height=300&width=400", alt: "San Francisco street" },
   ];
 

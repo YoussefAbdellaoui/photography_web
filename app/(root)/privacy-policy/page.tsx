@@ -69,9 +69,9 @@ export default function PrivacyPolicyComponent() {
 
               <Section title="10. Contact Information">
                 <p>
-                  If you have any questions about this Privacy Policy or how your information is handled, please feel free to contact us at{"'"}
-                  <a href="mailto:Hamsa.Productions@proton.me" className="text-blue-600 hover:underline">
-                    Hamsa.Productions@proton.me
+                  If you have any questions about this Privacy Policy or how your information is handled, please feel free to contact us at  {" --> "}
+                  <a href="mailto:Hamsa-Productions@proton.me" className="text-blue-600 hover:underline">
+                    Hamsa-Productions@proton.me
                   </a>
                   .
                 </p>
