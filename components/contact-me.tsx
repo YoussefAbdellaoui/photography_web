@@ -1,4 +1,4 @@
-"use client"
+"'use client'"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
@@ -6,9 +6,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, Send, Camera, Coffee } from "lucide-react"
-import FloatingDockDemo from "@/components/FloatingDock"
 
-export default function ContactMeComponent() {
+export function ContactMeComponent() {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -18,9 +17,9 @@ export default function ContactMeComponent() {
   }
 
   return (
-    <div className="container mx-auto px-4 pt-16 max-w-4xl">
-      <FloatingDockDemo/>
+    <div className="container mx-auto px-4 py-16 max-w-4xl">
       <h1 className="text-4xl font-bold mb-8 text-center">Let‘s Connect!</h1>
+      
       <div className="grid md:grid-cols-2 gap-12">
         <div className="space-y-6">
           <p className="text-lg">
@@ -30,7 +29,7 @@ export default function ContactMeComponent() {
           
           <div className="flex items-center space-x-3">
             <Mail className="text-slate-900 dark:text-slate-50" />
-            <span>hamsa-productions@proton.com</span>
+            <span>shoot@youssef.com</span>
           </div>
           
           <div className="flex items-center space-x-3">
@@ -40,7 +39,7 @@ export default function ContactMeComponent() {
           
           <div className="flex items-center space-x-3">
             <MapPin className="text-slate-900 dark:text-slate-50" />
-            <span>Somewhere between 🌍 and the 🌙</span>
+            <span>Somewhere between Earth and the Moon</span>
           </div>
           
           <div className="flex items-center space-x-3 text-slate-500 dark:text-slate-400">

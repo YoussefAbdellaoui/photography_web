@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 mt-6 rounded-xl">
-      <div className="mx-auto px-80">
+      <div className="mx-auto px-52">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-4 md:mb-0">
             <h2 className="text-2xl font-bold">Rif - Shift - Media</h2>
@@ -40,7 +40,7 @@ const Footer = () => {
           <a href="/privacy-policy" className="hover:underline mr-4 ml-3">
               Privacy Policy
             </a>
-            <a href="/terms-and-conditions" className="hover:underline">
+            <a href="/tcs" className="hover:underline">
               Terms & Conditions
             </a>
           </div>
