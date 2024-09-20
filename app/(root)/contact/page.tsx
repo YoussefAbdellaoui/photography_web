@@ -1,5 +1,6 @@
 "use client"
 
+import emailjs from 'emailjs-com'
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -10,16 +11,43 @@ import FloatingDockDemo from "@/components/FloatingDock"
 
 export default function ContactMeComponent() {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically handle the form submission
-    setIsSubmitted(true)
+    setLoading(true)
+    setError(null)
+
+    const formData = {
+      name: (e.target as HTMLFormElement).name.value,
+      email: (e.target as HTMLFormElement).email.value,
+      message: (e.target as HTMLFormElement).message.value,
+    }
+
+    try {
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        formData,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+      )
+
+      if (result.status === 200) {
+        setIsSubmitted(true)
+      } else {
+        throw new Error('Failed to send the message. Please try again.')
+      }
+    } catch (err: any) {
+      setError(err.message || 'An unexpected error occurred. Please try again, or contact me at hamsa-productions@proton.com.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
     <div className="container mx-auto px-4 pt-16 max-w-4xl">
-      <FloatingDockDemo/>
+      <FloatingDockDemo />
       <h1 className="text-4xl font-bold mb-8 text-center">Let‘s Connect!</h1>
       <div className="grid md:grid-cols-2 gap-12">
         <div className="space-y-6">
@@ -54,21 +82,27 @@ export default function ContactMeComponent() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="John Doe" required />
+                <Input id="name" name="name" placeholder="John Doe" required />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="john@example.com" required />
+                <Input id="email" name="email" type="email" placeholder="john@example.com" required />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="What's on your mind?" required />
+                <Textarea id="message" name="message" placeholder="What's on your mind?" required />
               </div>
-              
-              <Button type="submit" className="w-full">
-                <Send className="mr-2 h-4 w-4" /> Send Message
+
+              {error && <p className="text-red-500 text-sm">{error}</p>}
+
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? "Sending..." : (
+                  <>
+                    <Send className="mr-2 h-4 w-4" /> Send Message
+                  </>
+                )}
               </Button>
             </form>
           ) : (
