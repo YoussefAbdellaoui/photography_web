@@ -10,7 +10,7 @@ export default function PhotographyPortfolio() {
 
   const images = [
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/UA.jpeg", alt: "Brand Logo Prototyp" },
-    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/City%20Waterfront%20Spain.jpg?t=2024-09-18T09%3A47%3A56.093Z", alt: "Spanish coast" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/GoHardOrGoHome%20prototyp-1-Front.png?t=2024-09-18T13%3A13%3A25.082Z", alt: "Go Hard or Go Home" },
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/IsUrAhighenough.png?t=2024-09-18T13%3A09%3A22.212Z", alt: "Brand Design Prototyp" },
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/camel.jpg", alt: "Camel in desert" },
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/camel.jpg", alt: "Camel in desert" },
