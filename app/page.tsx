@@ -19,7 +19,10 @@ export default function Component() {
       </video>
         
         {/* Floating Dock */} 
-      <FloatingDockDemo/>
+        <div className="pt-6">
+        <FloatingDockDemo/>
+        </div>
+      
       {/* Content Overlay */}
       <div className="relative z-10 flex-grow flex items-center justify-center px-4 text-center">
         <div className="bg-black bg-opacity-50 px-16 py-10 rounded-lg">

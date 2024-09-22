@@ -12,9 +12,9 @@ export default function PhotographyPortfolio() {
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/UA.jpeg", alt: "Brand Logo Prototyp" },
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/GoHardOrGoHome%20prototyp-1-Front.png?t=2024-09-18T13%3A13%3A25.082Z", alt: "Go Hard or Go Home" },
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/IsUrAhighenough.png?t=2024-09-18T13%3A09%3A22.212Z", alt: "Brand Design Prototyp" },
-    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/camel.jpg", alt: "Camel in desert" },
-    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/camel.jpg", alt: "Camel in desert" },
-    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/yate%20in%20dubai.jpg", alt: "Yate tour, Dubai Marina, UAE" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/RSM%20visitcard.png", alt: "Visit Card prototyp design" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Photography%20Services.png?t=2024-09-22T16%3A20%3A28.297Z", alt: "Branding Flayer Prototyp" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Displate%20EG.png?t=2024-09-22T16%3A44%3A23.264Z", alt: "LA poster" },
     // { src: "/placeholder.svg?height=300&width=400", alt: "San Francisco street" },
   ];
 
