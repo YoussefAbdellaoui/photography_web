@@ -15,6 +15,9 @@ export default function PhotographyPortfolio() {
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/RSM%20visitcard.png", alt: "Visit Card prototyp design" },
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Photography%20Services.png?t=2024-09-22T16%3A20%3A28.297Z", alt: "Branding Flayer Prototyp" },
     { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Displate%20EG.png?t=2024-09-22T16%3A44%3A23.264Z", alt: "LA poster" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/GoldenGate%20poster.png?t=2024-09-22T19%3A07%3A26.169Z", alt: "Golden Gate poster" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/SF%20Downtown%20poster.png?t=2024-09-22T19%3A23%3A40.833Z", alt: "SF downtown poster" },
+    { src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/LAdowntown%20poster.png?t=2024-09-22T19%3A42%3A55.893Z", alt: "LA downtown poster" },
     // { src: "/placeholder.svg?height=300&width=400", alt: "San Francisco street" },
   ];
 
