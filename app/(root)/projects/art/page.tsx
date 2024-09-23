@@ -27,9 +27,9 @@ export default function PhotographyPortfolio() {
     setSelectedImage(null);
   };
 
-   const handleOverlayClick = (e) => {
+   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
     // Check if the click is outside the image (on the overlay)
-    if (e.target.id === 'overlay') {
+    if ((e.target as HTMLElement).id === 'overlay') {
       closeImage();
     }
   };
