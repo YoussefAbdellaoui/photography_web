@@ -20,54 +20,54 @@ export default function AboutMeComponent() {
       <h1 className="text-4xl font-bold mb-8 text-center">SO, WHAT ABOUT ME? WHO AM I?</h1>
       
       <div className="space-y-6 text-lg">
+      <p>
+        My name is Youssef, a guy who finds his inner peace in <span className="text-blue-500 font-semibold">photography</span>.
+        I&apos;m currently diving into the <span className="italic">world of software development</span> (frontend) through my apprenticeship, 
+        but when I&apos;m not coding, I find peace behind the lens.
+      </p>
+
+      <div className="flex items-center">
+        <Camera className="text-blue-500 mr-2" size={24} />
         <p>
-          My name is Youssef, a guy who finds his inner peace in <span className="text-blue-500 font-semibold">photography</span>. 
-          I’m currently diving into the <span className="italic">world of software development</span> (frontend) through my apprenticeship, 
-          but when I’m not coding, I find peace behind the lens.
+          Photography has become my <span className="text-blue-500 font-semibold">creative outlet</span>,
+          allowing me to capture the <span className="text-blue-500 font-semibold">beauty</span> and 
+          <span className="text-blue-500 font-semibold">uniqueness</span> of the world around us.
         </p>
+      </div>
 
-        <div className="flex items-center">
-          <Camera className="text-blue-500 mr-2" size={24} />
-          <p>
-            Photography has become my <span className="text-blue-500 font-semibold">creative outlet</span>,
-             allowing me to capture the <span className="text-blue-500 font-semibold">beauty</span> and 
-             <span className="text-blue-500 font-semibold">uniqueness</span> of the world around us.
-          </p>
-        </div>
-
-        <div className="flex items-center">
-          <Plane className="text-blue-500 mr-2" size={24} />
-          <p>
-            Whether it’s an interesting street scene, a stunning landscape, or capturing dynamic 
-            <span className="text-blue-500 font-semibold">aerial footage</span> from above, 
-            I’m always on the lookout for that perfect shot.
-          </p>
-        </div>
-
+      <div className="flex items-center">
+        <Plane className="text-blue-500 mr-2" size={24} />
         <p>
-          I shoot just about anything that catches my eye, from landscapes to candid moments, 
-          always looking for that <span className="text-blue-500 font-semibold">special shot</span>. 
-          Aerial photography also allows me to capture stunning <span className="text-blue-500 font-semibold">aerial perspectives</span> 
-          that give a new sense of scale and wonder to familiar places.
+          Whether it&apos;s an interesting street scene, a stunning landscape, or capturing dynamic 
+          <span className="text-blue-500 font-semibold">aerial footage</span> from above, 
+          I&apos;m always on the lookout for that perfect shot.
         </p>
+      </div>
 
-        <div className="flex items-center">
-          <Share className="text-blue-500 mr-2" size={24} />
-          <p>
-            Beyond personal satisfaction, I love <span className="text-blue-500 font-semibold">sharing</span> 
-            my work with others, which is why I upload some of my photos to 
-            <a href="https://unsplash.com/@theworldthrumylenses" className="text-blue-500 underline">Unsplash</a>. 
-            It brings me joy knowing that people can use my images freely for their own projects.
-          </p>
-        </div>
+      <p>
+        I shoot just about anything that catches my eye, from landscapes to candid moments, 
+        always looking for that <span className="text-blue-500 font-semibold">special shot</span>. 
+        Aerial photography also allows me to capture stunning <span className="text-blue-500 font-semibold">aerial perspectives</span> 
+        that give a new sense of scale and wonder to familiar places.
+      </p>
 
+      <div className="flex items-center">
+        <Share className="text-blue-500 mr-2" size={24} />
         <p>
-          For me, photography isn’t just about taking pictures; it’s a way to slow down, appreciate the moment, and share that experience with others.
+          Beyond personal satisfaction, I love <span className="text-blue-500 font-semibold">sharing</span> 
+          my work with others, which is why I upload some of my photos to 
+          <a href="https://unsplash.com/@theworldthrumylenses" className="text-blue-500 underline">Unsplash</a>. 
+          It brings me joy knowing that people can use my images freely for their own projects.
         </p>
+      </div>
 
-        <p>
-          I'm creative, open-minded, and passionate about this visual journey I’m on, and I’m excited to share it with you :)
-        </p>
+      <p>
+        For me, photography isn&apos;t just about taking pictures; it&apos;s a way to slow down, appreciate the moment, and share that experience with others.
+      </p>
+
+      <p>
+        I&apos;m creative, open-minded, and passionate about this visual journey I&apos;m on, and I&apos;m excited to share it with you :)
+      </p>
 
         <div className="flex items-center justify-center">
           <Code className="text-blue-500 mr-2" size={24} />

@@ -13,9 +13,9 @@ export default function TermsAndConditionsComponent() {
           <ScrollArea className="h-[calc(100vh-200px)] pr-4">
             <div className="space-y-8">
               <Section title="1. General Use">
-                <p>
-                  The content provided on this website, including photographs and other visual media, is for informational and personal use only. You may not use, reproduce, or distribute any materials for commercial purposes without prior written permission from me. All content is subject to change without notice.
-                </p>
+              <p>
+                The content provided on this website, including photographs and other visual media, is for informational and personal use only. You may not use, reproduce, or distribute any materials for commercial purposes without prior written permission from me. All content is subject to change without notice.
+              </p>
               </Section>
 
               <Section title="2. Ownership of Content">
@@ -26,19 +26,19 @@ export default function TermsAndConditionsComponent() {
 
               <Section title="3. Free Use via Unsplash">
                 <p>
-                  Some of my work is uploaded to Unsplash for free use. You may use these images in accordance with Unsplash's license, which allows for both personal and commercial use without the need for attribution. However, I always appreciate a shout-out if you choose to do so.
+                  Some of my work is uploaded to Unsplash for free use. You may use these images in accordance with Unsplash&apos;s license, which allows for both personal and commercial use without the need for attribution. However, I always appreciate a shout-out if you choose to do so.
                 </p>
               </Section>
 
               <Section title="4. User Responsibilities">
                 <p>
-                  You are responsible for ensuring that your use of this website and the images complies with all applicable laws and regulations. Unauthorized use of the content or images may result in legal action.
+                 You are responsible for ensuring that your use of this website and the images complies with all applicable laws and regulations. Unauthorized use of the content or images may result in legal action.
                 </p>
               </Section>
 
               <Section title="5. Privacy Policy">
                 <p>
-                  Any personal information you provide via this website (such as through contact forms) will be kept private and not shared with third parties without your consent.
+                 Any personal information you provide via this website (such as through contact forms) will be kept private and not shared with third parties without your consent.
                 </p>
               </Section>
 
@@ -62,7 +62,7 @@ export default function TermsAndConditionsComponent() {
 
               <Section title="9. Governing Law">
                 <p>
-                  These terms are governed by and construed in accordance with the laws of Germany. Any disputes arising from these terms shall be resolved exclusively in the courts of Germany.
+                 These terms are governed by and construed in accordance with the laws of Germany. Any disputes arising from these terms shall be resolved exclusively in the courts of Germany.
                 </p>
               </Section>
             </div>

@@ -20,7 +20,7 @@ export default function ContactMeComponent() {
     setError(null)
 
     const formData = {
-      name: (e.target as HTMLFormElement).name.value,
+      name: (e.target as HTMLFormElement).name.valueOf,
       email: (e.target as HTMLFormElement).email.value,
       message: (e.target as HTMLFormElement).message.value,
     }
@@ -38,6 +38,7 @@ export default function ContactMeComponent() {
       } else {
         throw new Error('Failed to send the message. Please try again.')
       }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setError(err.message || 'An unexpected error occurred. Please try again, or contact me at hamsa-productions@proton.com.')
     } finally {

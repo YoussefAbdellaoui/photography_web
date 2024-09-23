@@ -1,6 +1,5 @@
 import React from 'react'
 import { Mail, Instagram, Github, Youtube } from 'lucide-react'
-import Link from 'next/link'
 
 const Footer = () => {
   return (
