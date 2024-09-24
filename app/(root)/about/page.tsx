@@ -8,7 +8,9 @@ import Footer from "@/components/Footer"
 export default function AboutMeComponent() {
   return (
     <div className="container mx-auto px-4 pb-6 max-w-4xl">
-      <FloatingDockDemo/>
+      <div className="pt-6">
+        <FloatingDockDemo />
+      </div>
       <Image 
         src="https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/City%20Waterfront%20Spain.jpg?t=2024-09-18T09%3A47%3A56.093Z" 
         alt="Aerial view of a city or campus" 
@@ -31,7 +33,7 @@ export default function AboutMeComponent() {
         <p>
           Photography has become my <span className="text-blue-500 font-semibold">creative outlet</span>,
           allowing me to capture the <span className="text-blue-500 font-semibold">beauty</span> and 
-          <span className="text-blue-500 font-semibold">uniqueness</span> of the world around us.
+          <span className="text-blue-500 font-semibold"> uniqueness</span> of the world around us.
         </p>
       </div>
 
@@ -39,7 +41,7 @@ export default function AboutMeComponent() {
         <Plane className="text-blue-500 mr-2" size={24} />
         <p>
           Whether it&apos;s an interesting street scene, a stunning landscape, or capturing dynamic 
-          <span className="text-blue-500 font-semibold">aerial footage</span> from above, 
+          <span className="text-blue-500 font-semibold"> aerial footage</span> from above, 
           I&apos;m always on the lookout for that perfect shot.
         </p>
       </div>
@@ -47,16 +49,16 @@ export default function AboutMeComponent() {
       <p>
         I shoot just about anything that catches my eye, from landscapes to candid moments, 
         always looking for that <span className="text-blue-500 font-semibold">special shot</span>. 
-        Aerial photography also allows me to capture stunning <span className="text-blue-500 font-semibold">aerial perspectives</span> 
+        Aerial photography also allows me to capture stunning <span className="text-blue-500 font-semibold">aerial perspectives </span> 
         that give a new sense of scale and wonder to familiar places.
       </p>
 
       <div className="flex items-center">
         <Share className="text-blue-500 mr-2" size={24} />
         <p>
-          Beyond personal satisfaction, I love <span className="text-blue-500 font-semibold">sharing</span> 
+          Beyond personal satisfaction, I love <span className="text-blue-500 font-semibold">sharing </span> 
           my work with others, which is why I upload some of my photos to 
-          <a href="https://unsplash.com/@theworldthrumylenses" className="text-blue-500 underline">Unsplash</a>. 
+          <a href="https://unsplash.com/@theworldthrumylenses" className="text-blue-500"> Unsplash</a>. 
           It brings me joy knowing that people can use my images freely for their own projects.
         </p>
       </div>
