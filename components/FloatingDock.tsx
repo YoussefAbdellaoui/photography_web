@@ -6,6 +6,7 @@ import {
   IconCamera,
   IconHome,
   IconPhone,
+  IconPlane,
 } from "@tabler/icons-react";
 
 export default function FloatingDockDemo() {
@@ -31,6 +32,13 @@ export default function FloatingDockDemo() {
         <IconCamera className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/projects",
+    },
+    {
+      title: "Drone Footage",
+      icon: (
+          <IconPlane className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/projects/footage",
     },
     {
       title: "Art Work",
