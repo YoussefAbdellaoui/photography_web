@@ -37,9 +37,7 @@ export default function PhotographyPortfolio() {
   return (
     <div className="flex flex-col items-center justify-center p-4 min-h-screen">
     {/* Space for the navbar */}
-    <div className="">
       <FloatingDockDemo />
-    </div>
 
     {/* Page title */}
     <h1 className="text-3xl md:text-4xl font-bold mb-14 text-center animate-fade-up animate-duration-[1000ms]">Art & Design</h1>
