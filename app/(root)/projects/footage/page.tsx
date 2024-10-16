@@ -5,17 +5,17 @@ import FloatingDockDemo from "@/components/FloatingDock"
 import Footer from "@/components/Footer"
 
 const videos = [
-  { id: 1, src: "'/placeholder.mp4'", title: "'Nature Scenery'" },
-  { id: 2, src: "'/placeholder.mp4'", title: "'Urban Landscape'" },
-  { id: 3, src: "'/placeholder.mp4'", title: "'Wildlife Close-up'" },
-  { id: 4, src: "'/placeholder.mp4'", title: "'Aerial City View'" },
+  { id: 1, src: "", title: "'Nature Scenery'" },
+  { id: 2, src: "", title: "'Urban Landscape'" },
+  { id: 3, src: "", title: "'Wildlife Close-up'" },
+  { id: 4, src: "", title: "'Aerial City View'" },
 ]
 
 export default function FootagePageComponent() {
 //   const [selectedVideo, setSelectedVideo] = useState(null)
 
   return (
-    <main className="container mx-auto px-4 py-8">
+    <main className="flex flex-col items-center justify-center p-4 min-h-screen">
         <FloatingDockDemo />
       <h1 className="text-3xl font-bold mb-8 text-center">Footage</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
