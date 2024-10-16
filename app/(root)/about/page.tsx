@@ -13,7 +13,7 @@ export default function AboutMeComponent() {
       </div>
       <Image 
         src="https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/City%20Waterfront%20Spain.jpg?t=2024-09-18T09%3A47%3A56.093Z" 
-        alt="Aerial view of a city or campus" 
+        alt="Aerial view of a city" 
         width={1200} 
         height={600} 
         className="rounded-lg shadow-lg mb-8"
