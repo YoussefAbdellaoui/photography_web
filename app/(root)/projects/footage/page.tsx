@@ -15,7 +15,7 @@ export default function FootagePageComponent() {
 //   const [selectedVideo, setSelectedVideo] = useState(null)
 
   return (
-    <main className="flex flex-col items-center justify-center p-4 min-h-screen">
+    <main className="flex flex-col items-center justify-center p-4">
         <FloatingDockDemo />
       <h1 className="text-3xl font-bold mb-8 text-center">Footage</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

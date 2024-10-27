@@ -194,7 +194,9 @@ export default function ContactPage() {
       <div className="mt-12 text-center text-slate-500 dark:text-slate-400">
         <p>Don&apos;t be a stranger, unless you&apos;re actually a stranger. In that case, let&apos;s change that!</p>
       </div>
+      <div className="pb-6">
         <Footer />
+      </div>
     </div>
   )
 }
