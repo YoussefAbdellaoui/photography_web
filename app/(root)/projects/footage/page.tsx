@@ -5,10 +5,10 @@ import FloatingDockDemo from "@/components/FloatingDock"
 import Footer from "@/components/Footer"
 
 const videos = [
-  { id: 1, src: "", title: "'Nature Scenery'" },
-  { id: 2, src: "", title: "'Urban Landscape'" },
-  { id: 3, src: "", title: "'Wildlife Close-up'" },
-  { id: 4, src: "", title: "'Aerial City View'" },
+  { id: 1, src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Demo_1.mp4?t=2024-10-27T09%3A53%3A19.826Z", title: "Nature View" },
+  { id: 2, src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Demo_3.mp4?t=2024-10-27T10%3A07%3A49.665Z", title: "Arial View" },
+  { id: 3, src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Demo_4.mp4?t=2024-10-27T09%3A59%3A59.773Z", title: "360° TV Tower Stuttgart city" },
+  { id: 4, src: "https://mcazjrqrbacpcxpqdjca.supabase.co/storage/v1/object/public/Assets/Demo_2.mp4?t=2024-10-27T09%3A53%3A31.688Z", title: "360° View" },
 ]
 
 export default function FootagePageComponent() {
