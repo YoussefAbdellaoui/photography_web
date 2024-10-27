@@ -28,9 +28,8 @@ export default function Component() {
         <div className="bg-black bg-opacity-50 px-16 py-10 rounded-lg">
           <h1 className="text-5xl font-bold text-white mb-7">Welcome to</h1>
           <h3 className="text-4xl font-bold text-white mb-7"><Cover>Rif Shift Media</Cover></h3>
-          <p className="text-xl text-white mb-6"></p>
-          <Button variant="outline" className="text-black border-white hover:bg-white hover:text-black transition-colors hover-effect">
-            <a href="/projects">Learn More</a>
+          <Button variant="outline" className="hover-effect hover:text-white inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <a href="/contact" className="font-semibold">Services & Contact</a>
           </Button>
         </div>
       </div>

@@ -48,7 +48,7 @@ export default function FloatingDockDemo() {
       href: "/projects/art",
     },
     {
-      title: "Contact",
+      title: "Services & Contact",
       icon: (
         <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
