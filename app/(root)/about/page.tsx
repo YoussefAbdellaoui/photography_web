@@ -7,7 +7,7 @@ import Footer from "@/components/Footer"
 
 export default function AboutMeComponent() {
   return (
-    <div className="container mx-auto px-4 pb-6 max-w-4xl">
+    <div className="container mx-auto px-4 pb-6 max-w-5xl">
       <div className="pt-6">
         <FloatingDockDemo />
       </div>

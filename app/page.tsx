@@ -19,7 +19,7 @@ export default function Component() {
       </video>
         
         {/* Floating Dock */} 
-        <div className="pt-6">
+        <div className="p-4">
         <FloatingDockDemo/>
         </div>
       
@@ -37,11 +37,6 @@ export default function Component() {
       {/* Placeholder for Navbar (you'll implement this) */}
       <div className="absolute top-0 left-0 right-0 z-20">
         {/* Your Navbar component will go here */}
-      </div>
-
-      {/* Placeholder for Footer (you'll implement this) */}
-      <div className="absolute bottom-0 left-0 right-0 z-20">
-        {/* Your Footer component will go here */}
       </div>
     </div>
   )
