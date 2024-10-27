@@ -185,7 +185,7 @@ export default function ContactPage() {
             <div className="text-center space-y-4">
               <Camera className="mx-auto h-16 w-16 text-slate-900 animate-bounce dark:text-slate-50" />
               <h2 className="text-2xl font-semibold">Thanks for reaching out!</h2>
-              <p>I'll get back to you faster than you can say &quot;cheese&quot; for a photo.</p>
+              <p>I&apos;ll get back to you faster than you can say &quot;cheese&quot; for a photo.</p>
             </div>
           )}
         </div>
