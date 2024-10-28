@@ -6,13 +6,19 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, Phone, MapPin, Send, Camera, Coffee, Plane, Image as ImageIcon, Users, Building, Heart, Sparkles } from "lucide-react"
+import { Mail, MapPin, Send, Camera, Coffee, Plane, Image as ImageIcon, Users, Building, Sparkles, Laptop } from "lucide-react"
 import FloatingDockDemo from "@/components/FloatingDock"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Footer from "@/components/Footer"
 
 function PhotographyServices() {
   const services = [
+    {
+      title: "Video & Photo Editing",
+      description: "Enhance your photos and videos with professional editing.",
+      icon: <Laptop className="h-8 w-8 mb-2 text-slate-900 dark:text-slate-50" />,
+      tools: ["DaVinci Resolve", "Affinity Photo"]
+    },
     {
       title: "Portrait Photography",
       description: "Capture personalities with stunning individual or group portraits.",
@@ -35,12 +41,6 @@ function PhotographyServices() {
       title: "Real Estate Photography",
       description: "Showcase properties with professional interior and exterior shots.",
       icon: <Building className="h-8 w-8 mb-2 text-slate-900 dark:text-slate-50" />,
-      tools: ["Digital Camera", "Drone"]
-    },
-    {
-      title: "Wedding Photography",
-      description: "Capture your special day with a blend of candid and posed shots.",
-      icon: <Heart className="h-8 w-8 mb-2 text-slate-900 dark:text-slate-50" />,
       tools: ["Digital Camera", "Drone"]
     },
     {
@@ -72,6 +72,16 @@ function PhotographyServices() {
                 {service.tools.includes("Drone") && (
                   <span className="bg-slate-900/10 text-slate-900 text-xs font-medium px-2 py-1 rounded-full dark:bg-slate-50/10 dark:text-slate-50">
                     Drone
+                  </span>
+                )}
+                {service.tools.includes("DaVinci Resolve") && (
+                  <span className="bg-slate-900/10 text-slate-900 text-xs font-medium px-2 py-1 rounded-full dark:bg-slate-50/10 dark:text-slate-50">
+                    DaVinci Resolve
+                  </span>
+                )}
+                {service.tools.includes("Affinity Photo") && (
+                  <span className="bg-slate-900/10 text-slate-900 text-xs font-medium px-2 py-1 rounded-full dark:bg-slate-50/10 dark:text-slate-50">
+                    Affinity Photo
                   </span>
                 )}
               </div>
@@ -134,17 +144,21 @@ export default function ContactPage() {
           
           <div className="flex items-center space-x-3">
             <Mail className="text-slate-900 dark:text-slate-50" />
-            <span>hamsa-productions@proton.com</span>
+            <span>rifshiftmedia@proton.me</span>
           </div>
           
-          <div className="flex items-center space-x-3">
+          {/* <div className="flex items-center space-x-3">
             <Phone className="text-slate-900 dark:text-slate-50" />
             <span>+1 (555) 123-4567</span>
-          </div>
+          </div> */}
           
           <div className="flex items-center space-x-3">
             <MapPin className="text-slate-900 dark:text-slate-50" />
             <span>Somewhere between 🌍 and the 🌙</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <MapPin className="text-slate-900 dark:text-slate-50" />
+            <span>Stuttgart, Germany 🇩🇪</span>
           </div>
           
           <div className="flex items-center space-x-3 text-slate-500 dark:text-slate-400">
