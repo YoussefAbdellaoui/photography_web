@@ -71,7 +71,7 @@ export default function PrivacyPolicyComponent() {
                 <p>
                   If you have any questions about this Privacy Policy or how your information is handled, please feel free to contact us at  {" --> "}
                   <a href="mailto:Hamsa-Productions@proton.me" className="text-blue-600 hover:underline">
-                    Hamsa-Productions@proton.me
+                    rifshiftmedia@proton.me
                   </a>
                   .
                 </p>
